@@ -1,0 +1,52 @@
+﻿@using Entity;
+@using BusinessServices;
+@{
+    if (IsPost)
+    {
+        SACH s = new SACH();
+        s.MaSach = int.Parse(Request["masach"]);
+        s.TenSach = Request["tensach"];
+        s.Gia = int.Parse(Request["gia"]);
+        s.TacGia = Request["tacgia"];
+        s.NamXuatBan = int.Parse(Request["nam"]);
+
+        var xlSach = new XL_SACH();
+        xlSach.ThemSach(s);
+
+        Response.Redirect("~/MH_DOC_DS_SACH.cshtml");
+    }
+}
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div>
+        <form action="~/MH_GHI_SACH.cshtml" method="post">
+            <p>
+                <label for="text1">Ma Sach</label><br>
+                <input type="text" name="masach" value="" />
+            </p>
+            <p>
+                <label for="text2">Ten Sach</label><br>
+                <input type="text" name="tensach" value="" />
+            </p>
+            <p>
+                <label for="text1">Gia</label><br>
+                <input type="text" name="gia" value="" />
+            </p>
+            <p>
+                <label for="text2">Tac Gia</label><br>
+                <input type="text" name="tacgia" value="" />
+            </p>
+            <p>
+                <label for="text1">Nam Xuat Ban</label><br>
+                <input type="text" name="nam" value="" />
+            </p>
+
+            <p><input type="submit" value="GHI" /></p>
+        </form>
+    </div>
+</body>
+</html>
+    

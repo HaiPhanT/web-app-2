@@ -1,0 +1,6 @@
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\Entity\bin\Debug\Entity.dll
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\Entity\bin\Debug\Entity.pdb
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\Entity\obj\Debug\Entity.csprojAssemblyReference.cache
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\Entity\obj\Debug\Entity.dll
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\Entity\obj\Debug\Entity.pdb

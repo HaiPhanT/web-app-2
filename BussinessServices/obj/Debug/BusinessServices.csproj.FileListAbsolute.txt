@@ -1,0 +1,11 @@
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\BussinessServices\bin\Debug\BussinessServices.dll
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\BussinessServices\bin\Debug\BussinessServices.pdb
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\BussinessServices\bin\Debug\DAL.dll
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\BussinessServices\bin\Debug\Entity.dll
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\BussinessServices\bin\Debug\DAL.pdb
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\BussinessServices\bin\Debug\Entity.pdb
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\BussinessServices\obj\Debug\BusinessServices.csprojAssemblyReference.cache
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\BussinessServices\obj\Debug\BusinessServices.csproj.CoreCompileInputs.cache
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\BussinessServices\obj\Debug\BusinessServices.csproj.CopyComplete
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\BussinessServices\obj\Debug\BussinessServices.dll
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\BussinessServices\obj\Debug\BussinessServices.pdb

@@ -1,0 +1,9 @@
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\DAL\bin\Debug\DAL.dll
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\DAL\bin\Debug\DAL.pdb
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\DAL\bin\Debug\Entity.dll
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\DAL\bin\Debug\Entity.pdb
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\DAL\obj\Debug\DAL.dll
+E:\VB2\HK III\LTHDT\Bai_Giang\WebApplication\DAL\obj\Debug\DAL.pdb

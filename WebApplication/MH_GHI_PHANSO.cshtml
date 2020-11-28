@@ -1,0 +1,46 @@
+﻿@using Entity;
+@using BusinessServices;
+@{
+    string totalMessage = string.Empty;
+    if (IsPost)
+    {
+
+        int t = int.Parse(Request["tu"]);
+        int m = int.Parse(Request["mau"]);
+
+        var xlPhanSo = new XL_PHANSO();
+        var kq = xlPhanSo.Ghi(t, m);
+
+        if (kq == true)
+        {
+            totalMessage = "Luu thanh cong";
+        }
+        else
+        {
+            totalMessage = "Luu that bai";
+        }
+    }
+}
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div>
+        <form action="~/MH_GHI_PHANSO.cshtml" method="post">
+            <p>
+                <label for="tu">Tu so:</label><br>
+                <input type="text" name="tu" value="" />
+            </p>
+            <p>
+                <label for="mau">Mau so:</label><br>
+                <input type="text" name="mau" value="" />
+            </p>
+            
+            <p><input type="submit" value=" GHI " /></p>
+        </form>
+        Ket qua la @totalMessage
+    </div>
+</body>
+</html>
+    

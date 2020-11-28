@@ -1,0 +1,25 @@
+﻿@using Entity;
+@using BusinessServices;
+@{
+    int maSach = int.Parse(Request["masach"]);
+    if (IsPost)
+    {
+        XL_SACH xlSach = new XL_SACH();
+        xlSach.XoaSach(int.Parse(Request["masach"]));
+        Response.Redirect("~/MH_DOC_DS_SACH.cshtml");
+    }
+}
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div>
+        <form action="~/MH_XOA_SACH.cshtml?masach=@maSach" method="post">
+            <h3>Ban co muon xoa sach voi ma la @maSach</h3>
+            <p><input type="submit" value="XOA" /></p>
+        </form>
+    </div>
+</body>
+</html>
+    

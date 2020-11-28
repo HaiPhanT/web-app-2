@@ -1,0 +1,60 @@
+﻿@using Entity;
+@using BusinessServices;
+@using DAL;
+@{
+    var xlSach = new XL_SACH(new LT_SACH());
+    var dsSach = xlSach.LayDanhSach();
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even){
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="~/MH_GHI_SACH.cshtml">Them sach</a>
+        <form action="~/MH_DOC_DS_SACH.cshtml" method="post">
+            <p><input type="submit" value=" DOC " /></p>
+        </form>
+    </div>
+    <div>
+        <table style="width:100%">
+            <tr>
+                <th>Ma Sach</th>
+                <th>Ten Sach</th>
+                <th>Gia</th>
+                <th></th>
+                <th></th>
+            </tr>
+            @foreach (SACH s in dsSach)
+            {
+        <tr>
+            <td>@s.MaSach</td>
+            <td>@s.TenSach</td>
+            <td>@s.Gia</td>
+            <td><a href="~/MH_XOA_SACH.cshtml?masach=@s.MaSach">Xoa</a></td>
+            <td>
+                <a href="~/MH_SUA_SACH.cshtml?masach=@s.MaSach&tensach=@s.TenSach&gia=@s.Gia&tacgia=@s.TacGia&nam=@s.NamXuatBan">Sua</a>
+            </td>
+        </tr>
+            }
+        </table>
+        
+    </div>
+</body>
+</html>
+    

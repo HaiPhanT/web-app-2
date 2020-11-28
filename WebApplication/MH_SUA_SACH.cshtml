@@ -1,0 +1,58 @@
+﻿@using Entity;
+@using BusinessServices;
+@{
+    SACH sachCu = new SACH();
+    sachCu.MaSach = int.Parse(Request["masach"]);
+    sachCu.TenSach = Request["tensach"];
+    sachCu.Gia = int.Parse(Request["gia"]);
+    sachCu.TacGia = Request["tacgia"];
+    sachCu.NamXuatBan = int.Parse(Request["nam"]);
+    if (IsPost)
+    {
+        SACH sachMoi = new SACH();
+        sachMoi.MaSach = int.Parse(Request["masach"]);
+        sachMoi.TenSach = Request["tensach"];
+        sachMoi.Gia = int.Parse(Request["gia"]);
+        sachMoi.TacGia = Request["tacgia"];
+        sachMoi.NamXuatBan = int.Parse(Request["nam"]);
+
+        var xlSach = new XL_SACH();
+        xlSach.SuaSach(sachMoi);
+
+        Response.Redirect("~/MH_DOC_DS_SACH.cshtml");
+    }
+}
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div>
+        <form action="~/MH_SUA_SACH.cshtml" method="post">
+            <p>
+                <label for="text1">Ma Sach</label><br>
+                <input type="text" name="masach" value="@sachCu.MaSach" readonly/>
+            </p>
+            <p>
+                <label for="text2">Ten Sach</label><br>
+                <input type="text" name="tensach" value="@sachCu.TenSach" />
+            </p>
+            <p>
+                <label for="text1">Gia</label><br>
+                <input type="text" name="gia" value="@sachCu.Gia" />
+            </p>
+            <p>
+                <label for="text2">Tac Gia</label><br>
+                <input type="text" name="tacgia" value="@sachCu.TacGia" />
+            </p>
+            <p>
+                <label for="text1">Nam Xuat Ban</label><br>
+                <input type="text" name="nam" value="@sachCu.NamXuatBan" />
+            </p>
+
+            <p><input type="submit" value="GHI" /></p>
+        </form>
+    </div>
+</body>
+</html>
+    

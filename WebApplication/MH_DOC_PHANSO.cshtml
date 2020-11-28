@@ -1,0 +1,34 @@
+﻿@using Entity;
+@using BusinessServices;
+@{
+    string totalMessage = string.Empty;
+    PHANSO p = new PHANSO();
+    if (IsPost)
+    {
+
+        var xlPhanSo = new XL_PHANSO();
+        p = xlPhanSo.Doc();
+    }
+}
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div>
+        <form action="~/MH_DOC_PHANSO.cshtml" method="post">
+            <p>
+                <label for="tu">Tu so:</label><br>
+                <input type="text" name="tu" value="@p.TuSo" />
+            </p>
+            <p>
+                <label for="mau">Mau so:</label><br>
+                <input type="text" name="mau" value="@p.MauSo" />
+            </p>
+            
+            <p><input type="submit" value=" DOC " /></p>
+        </form>
+    </div>
+</body>
+</html>
+    
